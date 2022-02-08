@@ -1,3 +1,6 @@
+const defaultTheme = require('tailwindcss/defaultTheme');
+const colors = require('tailwindcss/colors');
+
 module.exports = {
   content: [
     "./storybook-components/components/**",
@@ -5,11 +8,17 @@ module.exports = {
     "./src/**/*.stories.tsx"
   ],
   theme: {
+    ...defaultTheme,
     colors: {
-      primary: '#1D2F6F',
-      secondary: '#8390FA',
-      tertiary: '#FBFBFB',
-      roseDust: '#AA6373',
+      transparent: 'transparent',
+      current: 'currentColor',
+      black: colors.black,
+      white: colors.white,
+      gray: colors.gray,
+      emerald: colors.emerald,
+      indigo: colors.indigo,
+      yellow: colors.yellow,
+      ...colors
     },
     screens: {
       'sm': '640px',
@@ -19,7 +28,7 @@ module.exports = {
       '2xl': '1536px',
     },
     fontFamily: {
-      sans: ['Dongle'],
+      sans: ['Inter var', ...defaultTheme.fontFamily.sans],
     },
     extend: {
       keyframes: {
@@ -30,6 +39,11 @@ module.exports = {
       },
       animation: {
         'phase': 'phase-in 2s ease-in-out',
+      },
+      colors: {
+        'reactLogoBlue': '#04d8ff',
+        'reduxLogoPurple': '#764abc',
+        'webpackLogoBlue': '#8ed5fb'
       }
     },
   },

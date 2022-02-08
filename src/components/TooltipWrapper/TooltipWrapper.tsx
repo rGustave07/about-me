@@ -8,9 +8,14 @@ const TooltipWrapper: React.FC<ToolTipWrapperProps> = (props): JSX.Element => {
 	const {tooltip, children} = props;
 
 	return (
-		<div className='flex items-center tooltip relative w-fit'>
+		<div className='flex items-center tooltip relative w-fit target group'>
 			{children}
-			<span className='tooltiptext bg-primary text-tertiary text-lg top-[0px] right-[50px] w-max'>
+			<span
+				className={`absolute rounded left-2 
+				top-[25px] min-w-[max-content] m-auto
+				bg-sky-500 px-4 py-2 drop-shadow-md 
+				hidden group-hover:flex`}
+			>
 				{tooltip}
 			</span>
 		</div>

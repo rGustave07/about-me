@@ -1,11 +1,12 @@
 import React from 'react';
-import { useState } from "react";
-import "./App.css";
+
+import MainHero from './sections/MainHero';
+import "./index.css";
 
 function App() {
   return (
     <div className="h-screen">
-      <header className="text-3xl font-bold underline">test</header>
+      <MainHero />
     </div>
   );
 }

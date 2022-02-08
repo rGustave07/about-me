@@ -1,0 +1,1 @@
+export const hockeyPic = 'https://ritter-portfolio.s3.us-west-1.amazonaws.com/static-images/Ritter_Hockey.jpg';
