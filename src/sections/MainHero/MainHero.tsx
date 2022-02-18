@@ -67,8 +67,8 @@ const MainHero = (props: MainHeroProps): JSX.Element => {
 										<a href="#">
 											<span className="sr-only">Workflow</span>
 											<img
-												className="h-8 w-auto sm:h-10"
-												src="https://tailwindui.com/img/logos/workflow-mark-indigo-600.svg"
+												className="h-8 w-auto sm:h-14"
+												src="https://ritter-portfolio.s3.us-west-1.amazonaws.com/static-images/RG2_Logo.png"
 											/>
 										</a>
 										<div className="-mr-2 flex items-center md:hidden">
